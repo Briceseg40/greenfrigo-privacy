@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politique de Confidentialité & Suppression de Compte - GreenFrigo</title>
+    <title>Centre de Confidentialité & Sécurité - GreenFrigo</title>
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
@@ -16,6 +16,28 @@
         }
         h1, h2 { color: #2D5A43; }
         h1 { border-bottom: 2px solid #2D5A43; padding-bottom: 8px; }
+        .nav-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 24px 0;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #dcdfdc;
+            border-top: 4px solid #2D5A43;
+            border-radius: 8px;
+            padding: 16px;
+            text-decoration: none;
+            color: #2c3e50;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .card h3 { margin: 0 0 8px 0; color: #2D5A43; }
+        .card p { margin: 0; font-size: 0.9em; color: #666; }
         .box { 
             background: #eaf4ed; 
             border-left: 4px solid #2D5A43; 
@@ -24,36 +46,64 @@
             border-radius: 4px;
         }
         ul { padding-left: 20px; }
-        a { color: #2D5A43; text-weight: bold; }
+        a { color: #2D5A43; font-weight: bold; }
+        .section-block { margin-bottom: 40px; }
     </style>
 </head>
 <body>
-    <h1>Politique de Confidentialité - GreenFrigo</h1>
+    <h1>Centre de Confidentialité & Sécurité — GreenFrigo</h1>
     <p><em>Dernière mise à jour : Octobre 2026</em></p>
 
-    <p>L'application <strong>GreenFrigo</strong> est engagée dans la protection de la vie privée et des données personnelles de ses utilisateurs.</p>
+    <!-- Navigation Rapide -->
+    <div class="nav-cards">
+        <a href="#privacy" class="card">
+            <h3>🔒 Confidentialité</h3>
+            <p>Politique de traitement et protection de vos données personnelles.</p>
+        </a>
+        <a href="#data-safety" class="card">
+            <h3>🛡️ Sécurité des Données</h3>
+            <p>Détails sur le chiffrement et le stockage sécurisé (Supabase).</p>
+        </a>
+        <a href="#delete-account" class="card">
+            <h3>🗑️ Suppression de Compte</h3>
+            <p>Procédure de suppression définitive de vos données sous 30 jours.</p>
+        </a>
+    </div>
 
-    <h2>1. Données collectées</h2>
-    <p>Nous collectons uniquement les informations strictement nécessaires au bon fonctionnement du service :</p>
-    <ul>
-        <li><strong>Informations de compte :</strong> Nom, adresse e-mail et identifiant unique fournis via l'authentification sécurisée Google OAuth.</li>
-        <li><strong>Données de l'application :</strong> Liste des aliments ajoutés au réfrigérateur, catégories et dates de péremption pour la gestion de vos stocks.</li>
-    </ul>
+    <!-- Section Politique de Confidentialité -->
+    <div id="privacy" class="section-block">
+        <h2>1. Politique de Confidentialité & Données Collectées</h2>
+        <p>L'application <strong>GreenFrigo</strong> est engagée dans la protection de la vie privée. Nous collectons uniquement les informations strictement nécessaires au bon fonctionnement du service :</p>
+        <ul>
+            <li><strong>Informations de compte :</strong> Nom, adresse e-mail et identifiant unique fournis via l'authentification sécurisée Google OAuth.</li>
+            <li><strong>Données de l'application :</strong> Liste des aliments ajoutés au réfrigérateur, catégories et dates de péremption pour la gestion de vos stocks.</li>
+        </ul>
+    </div>
 
-    <h2>2. Utilisation et sécurité des données</h2>
-    <p>Vos données sont utilisées exclusivement pour vous fournir le service de suivi de stock et de prévention du gaspillage alimentaire. Toutes les communications entre l'application et nos serveurs sécurisés (Supabase) sont entièrement chiffrées en transit via le protocole HTTPS/TLS.</p>
-    <p>Nous ne vendons, ne louons et ne partageons aucune donnée personnelle à des tiers.</p>
+    <!-- Section Sécurité des Données -->
+    <div id="data-safety" class="section-block">
+        <h2>2. Sécurité & Chiffrement des Données</h2>
+        <p>Vos données sont utilisées exclusivement pour vous fournir le service de suivi de stock et de prévention du gaspillage alimentaire.</p>
+        <ul>
+            <li><strong>Chiffrement en transit :</strong> Toutes les communications entre l'application et nos serveurs sécurisés (Supabase) sont chiffrées via le protocole HTTPS/TLS.</li>
+            <li><strong>Non-partage :</strong> Nous ne vendons, ne louons et ne partageons aucune donnée personnelle à des tiers à des fins commerciales.</li>
+        </ul>
+    </div>
 
-    <div class="box">
-        <h2>3. Demande de suppression de compte et des données</h2>
-        <p>Conformément aux directives du RGPD et aux exigences du Google Play Store, vous disposez d'un droit d'accès, de modification et de suppression totale de vos données.</p>
-        <p>Pour demander la suppression définitive de votre compte utilisateur ainsi que de toutes les données associées :</p>
+    <!-- Section Suppression de Compte -->
+    <div id="delete-account" class="box">
+        <h2>3. Demande de Suppression de Compte et des Données</h2>
+        <p>Conformément aux directives du RGPD et aux exigences du Google Play Store, vous disposez d'un droit de suppression totale de vos données.</p>
+        <p>Pour demander la suppression définitive de votre compte utilisateur et de vos données associées :</p>
         <p>Envoyez un e-mail à : <a href="mailto:contact.greenfrigo@gmail.com"><strong>contact.greenfrigo@gmail.com</strong></a></p>
         <p><em>Objet du message :</em> <strong>Suppression de compte GreenFrigo</strong></p>
         <p>Vos informations et votre compte seront intégralement et définitivement effacés de nos bases de données sous un délai maximal de 30 jours.</p>
     </div>
 
-    <h2>4. Contact</h2>
-    <p>Pour toute question concernant cette politique ou l'exercice de vos droits, vous pouvez nous contacter directement à l'adresse : <a href="mailto:contact.greenfrigo@gmail.com"><strong>contact.greenfrigo@gmail.com</strong></a>.</p>
+    <!-- Contact -->
+    <div class="section-block">
+        <h2>4. Contact</h2>
+        <p>Pour toute question, contactez-nous directement à : <a href="mailto:contact.greenfrigo@gmail.com"><strong>contact.greenfrigo@gmail.com</strong></a>.</p>
+    </div>
 </body>
 </html>
